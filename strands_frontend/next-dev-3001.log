@@ -1,0 +1,87 @@
+▲ Next.js 16.1.6 (webpack)
+- Local:         http://localhost:3001
+- Network:       http://10.14.0.2:3001
+
+✓ Starting...
+✓ Ready in 13.4s
+○ Compiling / ...
+ GET / 200 in 116s (compile: 112s, render: 3.9s)
+ GET / 200 in 341ms (compile: 42ms, render: 299ms)
+○ Compiling /api/copilotkit ...
+⚠ ./node_modules/@whatwg-node/fetch/dist/node-ponyfill.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@whatwg-node/fetch/dist/node-ponyfill.js
+./node_modules/graphql-yoga/esm/server.js
+./node_modules/graphql-yoga/esm/index.js
+./node_modules/@copilotkit/runtime/dist/index.mjs
+./app/api/copilotkit/route.ts
+ POST /api/copilotkit 200 in 40s (compile: 39.5s, render: 773ms)
+ POST /api/copilotkit 200 in 40s (compile: 39.5s, render: 774ms)
+ POST /api/copilotkit 200 in 40s (compile: 39.5s, render: 774ms)
+ POST /api/copilotkit 200 in 33.1s (compile: 32.3s, render: 774ms)
+ POST /api/copilotkit 200 in 42s (compile: 41s, render: 777ms)
+ POST /api/copilotkit 200 in 42s (compile: 41s, render: 774ms)
+ POST /api/copilotkit 200 in 337ms (compile: 83ms, render: 254ms)
+ POST /api/copilotkit 200 in 334ms (compile: 81ms, render: 253ms)
+ POST /api/copilotkit 200 in 332ms (compile: 80ms, render: 252ms)
+ POST /api/copilotkit 200 in 331ms (compile: 79ms, render: 252ms)
+ POST /api/copilotkit 200 in 327ms (compile: 75ms, render: 252ms)
+ POST /api/copilotkit 200 in 220ms (compile: 33ms, render: 187ms)
+ POST /api/copilotkit 200 in 214ms (compile: 26ms, render: 188ms)
+ POST /api/copilotkit 200 in 213ms (compile: 25ms, render: 188ms)
+ POST /api/copilotkit 200 in 208ms (compile: 20ms, render: 188ms)
+ GET / 200 in 537ms (compile: 358ms, render: 179ms)
+ POST /api/copilotkit 200 in 32.1s (compile: 136ms, render: 32.0s)
+ POST /api/copilotkit 200 in 6.5s (compile: 11ms, render: 6.5s)
+ POST /api/copilotkit 200 in 5.3s (compile: 8ms, render: 5.3s)
+ POST /api/copilotkit 200 in 8.7s (compile: 11ms, render: 8.7s)
+ POST /api/copilotkit 200 in 5.4s (compile: 5ms, render: 5.4s)
+ POST /api/copilotkit 200 in 5.7s (compile: 7ms, render: 5.7s)
+ GET / 200 in 1070ms (compile: 858ms, render: 212ms)
+ GET / 200 in 7.1s (compile: 400ms, render: 6.7s)
+○ Compiling /api/copilotkit ...
+⚠ ./node_modules/@whatwg-node/fetch/dist/node-ponyfill.js
+Critical dependency: the request of a dependency is an expression
+
+Import trace for requested module:
+./node_modules/@whatwg-node/fetch/dist/node-ponyfill.js
+./node_modules/graphql-yoga/esm/server.js
+./node_modules/graphql-yoga/esm/index.js
+./node_modules/@copilotkit/runtime/dist/index.mjs
+./app/api/copilotkit/route.ts
+ POST /api/copilotkit 200 in 30.0s (compile: 29.4s, render: 564ms)
+ POST /api/copilotkit 200 in 30.0s (compile: 29.4s, render: 563ms)
+ POST /api/copilotkit 200 in 30.0s (compile: 29.4s, render: 560ms)
+ POST /api/copilotkit 200 in 30.0s (compile: 29.4s, render: 559ms)
+ POST /api/copilotkit 200 in 30.0s (compile: 29.4s, render: 559ms)
+ POST /api/copilotkit 200 in 30.0s (compile: 29.4s, render: 559ms)
+ POST /api/copilotkit 200 in 1098ms (compile: 27ms, render: 1071ms)
+ POST /api/copilotkit 200 in 1096ms (compile: 26ms, render: 1071ms)
+ POST /api/copilotkit 200 in 1096ms (compile: 25ms, render: 1070ms)
+ POST /api/copilotkit 200 in 1095ms (compile: 24ms, render: 1070ms)
+ POST /api/copilotkit 200 in 1094ms (compile: 24ms, render: 1070ms)
+ POST /api/copilotkit 200 in 1094ms (compile: 23ms, render: 1070ms)
+ POST /api/copilotkit 200 in 229ms (compile: 21ms, render: 208ms)
+ POST /api/copilotkit 200 in 228ms (compile: 19ms, render: 208ms)
+ POST /api/copilotkit 200 in 227ms (compile: 18ms, render: 208ms)
+ POST /api/copilotkit 200 in 226ms (compile: 17ms, render: 208ms)
+ POST /api/copilotkit 200 in 225ms (compile: 16ms, render: 208ms)
+ POST /api/copilotkit 200 in 224ms (compile: 15ms, render: 208ms)
+ POST /api/copilotkit 200 in 302ms (compile: 19ms, render: 283ms)
+ POST /api/copilotkit 200 in 301ms (compile: 18ms, render: 283ms)
+ POST /api/copilotkit 200 in 300ms (compile: 17ms, render: 283ms)
+ POST /api/copilotkit 200 in 299ms (compile: 16ms, render: 283ms)
+ POST /api/copilotkit 200 in 299ms (compile: 16ms, render: 283ms)
+ POST /api/copilotkit 200 in 298ms (compile: 15ms, render: 283ms)
+ POST /api/copilotkit 200 in 247ms (compile: 20ms, render: 226ms)
+ POST /api/copilotkit 200 in 244ms (compile: 17ms, render: 226ms)
+ POST /api/copilotkit 200 in 242ms (compile: 16ms, render: 226ms)
+ POST /api/copilotkit 200 in 241ms (compile: 15ms, render: 225ms)
+ POST /api/copilotkit 200 in 240ms (compile: 15ms, render: 225ms)
+ POST /api/copilotkit 200 in 239ms (compile: 14ms, render: 225ms)
+ POST /api/copilotkit 200 in 38ms (compile: 6ms, render: 32ms)
+ POST /api/copilotkit 200 in 2.3s (compile: 5ms, render: 2.3s)
+ POST /api/copilotkit 200 in 8.4s (compile: 20ms, render: 8.4s)
+[?25h

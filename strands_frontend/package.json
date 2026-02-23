@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@ag-ui/client": "^0.0.45",
+    "@copilotkit/react-core": "^1.51.4",
+    "@copilotkit/react-ui": "^1.51.4",
+    "@copilotkit/runtime": "^1.51.4",
+    "@tailwindcss/postcss": "^4.2.0",
+    "autoprefixer": "^10.4.24",
+    "next": "^16.1.6",
+    "postcss": "^8.5.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwindcss": "^4.2.0"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
