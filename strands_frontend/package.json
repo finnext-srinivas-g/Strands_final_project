@@ -14,5 +14,10 @@
   },
   "devDependencies": {
     "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001"
   }
 }

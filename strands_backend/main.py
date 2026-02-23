@@ -4,8 +4,9 @@ from strands.models.openai import OpenAIModel
 from strands import Agent
 from ag_ui_strands import StrandsAgent, create_strands_app
 from config.agent_config import shared_state_config
-from tools.proverbs_tools import update_proverbs, get_weather, set_theme_color
+from tools.proverbs_tools import set_theme_color
 from tools.csv_tools import get_csv_preview, query_csv_data, answer_csv_question, group_by_csv, get_csv_summary
+from tools.github_tools import get_my_github_repos, get_github_repo_file_types, get_github_file_content
 from fastapi.middleware.cors import CORSMiddleware
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -24,28 +25,36 @@ system_prompt = (
     "Use group_by_csv for deterministic grouped analytics (count/sum/avg/min/max). "
     "Use answer_csv_question for analytical CSV questions like highest salary, lowest salary, "
     "employee count, department count, and employees per department. "
-    "Use update_proverbs only for proverb list management."
+    "When users ask for their GitHub repositories, call get_my_github_repos directly "
+    "and return repository names without asking for username. "
+    "When users ask what file types exist in repositories, call get_github_repo_file_types. "
+    "If the user mentions selected repos, pass those selected repo names in repo_names. "
+    "When users ask for content of files (for example README.md), call get_github_file_content. "
+    "Use file_name from the user query and selected repos if provided. "
+    "For GitHub file-content questions, do not answer from memory. "
+    "Always call get_github_file_content first and base the final answer only on tool output. "
 )
 
 strands_agent = Agent(
     model=model,
     system_prompt=system_prompt,
     tools=[
-        update_proverbs,
-        get_weather,
         set_theme_color,
         get_csv_preview,
         query_csv_data,
         get_csv_summary,
         group_by_csv,
         answer_csv_question,
+        get_my_github_repos,
+        get_github_repo_file_types,
+        get_github_file_content,
     ],
 )
 
 agui_agent = StrandsAgent(
     agent=strands_agent,
-    name="proverbs_agent",
-    description="A proverbs and data assistant that can query CSV data",
+    name="strands_agent",
+    description="A data assistant that can query CSV data and GitHub repositories",
     config=shared_state_config,
 )
 

@@ -43,16 +43,8 @@ export default function CopilotKitPage() {
         }}
         suggestions={[
           {
-            title: "Generative UI",
-            message: "What's the weather in San Francisco?",
-          },
-          {
             title: "Frontend Tools",
             message: "Set the theme to green.",
-          },
-          {
-            title: "Writing Agent State",
-            message: "Add a proverb about AI.",
           },
         ]}
       >
